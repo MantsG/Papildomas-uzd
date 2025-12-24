@@ -23,7 +23,7 @@ struct WordData {
 string cleanWord(const string& word);
 map<string, WordData> countWords(const string& fileName);
 void writeWordDataToFile(const map<string, WordData>& wordData, const string& fileName, const string& text);
-void writeWordDataToTerminal(const map<string, WordData>& wordData);
+void writeWordDataToTerminal(const map<string, WordData>& wordData, const string& text);
 vector<string> extractURLs(const string& text);
 
 #endif
