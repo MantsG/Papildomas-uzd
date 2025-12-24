@@ -1,1 +1,1 @@
-# Papildomas-uzd
+Programa, kuri randa visų žodžių pasikartojimus (ir atitinkamas jų eilutes) ir išveda tik tuos žodžius, kurie pasikartoja daugiau nei vieną kartą. Be to, ji randa visas URL nuorodas ir jas taip pat išveda.
