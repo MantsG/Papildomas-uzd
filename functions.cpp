@@ -87,7 +87,9 @@ void writeWordDataToFile(const map<string, WordData>& wordData, const string& fi
     outputFile.close();
 }
 
-void writeWordDataToTerminal(const map<string, WordData>& wordData) {
+void writeWordDataToTerminal(const map<string, WordData>& wordData, const string& text) {
+    vector<string> urls = extractURLs(text);
+    
     cout << std::setw(15) << std::left << "Word"
          << std::setw(10) << "Count"
          << "Lines" << std::endl;
@@ -104,6 +106,11 @@ void writeWordDataToTerminal(const map<string, WordData>& wordData) {
             cout << std::endl;
         }
     }
+    
+    cout << "-------------------------------------------------------------------------------" << endl;
+    cout << "URLs:" << endl;
+
+    for (const auto& url : urls) {
+        cout << url << endl;
+    }
 }
-
-
