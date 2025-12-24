@@ -15,7 +15,7 @@
 using namespace std;
 
 struct WordData {
-  int count
+  int count;
   set<int> lineNums;
 };
 
@@ -27,3 +27,4 @@ void writeWordDataToTerminal(const map<string, WordData>& wordData, const string
 vector<string> extractURLs(const string& text);
 
 #endif
+
